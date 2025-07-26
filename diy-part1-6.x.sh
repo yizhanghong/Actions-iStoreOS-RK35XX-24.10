@@ -13,8 +13,10 @@ echo $date_version > version
 
 # 修复系统kernel内核md5校验码不正确的问题
 # https://mirrors.ustc.edu.cn/openwrt/releases/24.10.2/targets/rockchip/armv8/kmods/
+# https://downloads.openwrt.org/releases/24.10.2/targets/rockchip/armv8/kmods/
+# https://archive.openwrt.org/releases/24.10.2/targets/rockchip/armv8/kmods/
 # https://mirrors.cqupt.edu.cn/openwrt/releases/24.10.2/targets/rockchip/armv8/kmods/
-# https://mirrors.sustech.edu.cn/openwrt/releases/24.10.2/targets/rockchip/armv8/kmods/
+# https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/24.10.2/targets/rockchip/armv8/kmods/
 Releases_version=$(cat include/version.mk | sed -n 's|.*releases/\([0-9]\+\.[0-9]\+\.[0-9]\+\).*|\1|p')
 md5_value=$(wget -qO- "https://mirrors.ustc.edu.cn/openwrt/releases/${Releases_version}/targets/rockchip/armv8/kmods/")
 hash_value=$(echo "$md5_value" | sed -n 's/.*6\.6\.93-1-\([0-9a-f]\{32\}\)\/.*/\1/p' | head -1)
