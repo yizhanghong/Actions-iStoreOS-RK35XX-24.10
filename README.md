@@ -29,7 +29,7 @@
 | ROCK-PI-4A | istoreos-rockchip-armv8-radxa_rock-pi-squashfs-sysupgrade.img.gz  |
 | ROCKPRO64  | istoreos-rockchip-armv8-pine64_rockpro64-squashfs-sysupgrade.img.gz  |
 
-### armv8/rk35xx 架构
+### ARMv8/RK35xx 架构
 
 | 设备           | 包名称                                                                   |
 | -------------- | ------------------------------------------------------------------------ |
