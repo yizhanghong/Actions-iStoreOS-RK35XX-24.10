@@ -33,13 +33,13 @@
 
 | 设备           | 包名称                                                                   |
 | -------------- | ------------------------------------------------------------------------ |
-| H66K/H68K/H69K | istoreos-rockchip-armv8-hinlink_opc-h6xk-squashfs-combined.img.gz       |
-| H88K           | istoreos-rockchip-armv8-hinlink_h88k-squashfs-combined.img.gz           |
-| NANOPI-R5S     | istoreos-rockchip-armv8-friendlyarm_nanopi-r5s-squashfs-combined.img.gz |
-| NANOPI-R6S     | istoreos-rockchip-armv8-friendlyarm_nanopi-r6s-squashfs-combined.img.gz |
-| R66S/R68S      | istoreos-rockchip-armv8-fastrhino_r6xs-squashfs-combined.img.gz         |
-| STATION-P2     | istoreos-rockchip-armv8-firefly_station-p2-squashfs-combined.img.gz     |
-| T68M     | istoreos-rockchip-armv8-lyt_t68m-squashfs-combined.img.gz     |
+| H66K/H68K/H69K | istoreos-rockchip-armv8-hinlink_opc-h6xk-squashfs-sysupgrade.img.gz       |
+| H88K           | istoreos-rockchip-armv8-hinlink_h88k-squashfs-sysupgrade.img.gz           |
+| NANOPI-R5S     | istoreos-rockchip-armv8-friendlyarm_nanopi-r5s-squashfs-sysupgrade.img.gz |
+| NANOPI-R6S     | istoreos-rockchip-armv8-friendlyarm_nanopi-r6s-squashfs-sysupgrade.img.gz |
+| R66S/R68S      | istoreos-rockchip-armv8-fastrhino_r6xs-squashfs-sysupgrade.img.gz         |
+| STATION-P2     | istoreos-rockchip-armv8-firefly_station-p2-squashfs-sysupgrade.img.gz     |
+| T68M     | istoreos-rockchip-armv8-lyt_t68m-squashfs-sysupgrade.img.gz     |
 | Orange-Pi-5-Plus     | istoreos-rockchip-armv8-xunlong_orangepi-5-plus-squashfs-sysupgrade.img.gz     |
 
 ### x86 架构
