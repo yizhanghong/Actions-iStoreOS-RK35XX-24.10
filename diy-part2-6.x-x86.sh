@@ -23,6 +23,11 @@ CONFIG_PACKAGE_nginx-mod-luci=y
 CONFIG_PACKAGE_luci-nginx=y" >> .config
 
 
+# 追加binder内核参数
+echo "CONFIG_PSI=y
+CONFIG_KPROBES=y" >> target/linux/x86/64/config-6.6
+
+
 # 集成CPU性能跑分脚本
 echo "CONFIG_PACKAGE_coremark=y" >> .config
 cp -f $GITHUB_WORKSPACE/configfiles/coremark/coremark.sh package/base-files/files/bin/coremark.sh

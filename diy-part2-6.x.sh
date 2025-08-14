@@ -17,6 +17,11 @@ cp -a $GITHUB_WORKSPACE/configfiles/etc/* package/base-files/files/etc/
 # ls package/base-files/files/etc/
 
 
+# 追加binder内核参数
+echo "CONFIG_PSI=y
+CONFIG_KPROBES=y" >> target/linux/rockchip/armv8/config-6.6
+
+
 # 集成CPU性能跑分脚本
 cp -a $GITHUB_WORKSPACE/configfiles/coremark/* package/base-files/files/bin/
 chmod 755 package/base-files/files/bin/coremark
