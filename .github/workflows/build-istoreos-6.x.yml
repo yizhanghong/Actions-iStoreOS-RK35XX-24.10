@@ -219,13 +219,13 @@ jobs:
     - name: 删除运行记录
       uses: xiaomeng9597/delete-workflow-runs@main
       with:
-        retain_days: 1
-        keep_minimum_runs: 1
+        retain_days: 20
+        keep_minimum_runs: 15
         token: ${{ env.GITHUB_TOKEN }}
 
     - name: 删除自动发布的旧固件
       uses: dev-drprasad/delete-older-releases@v0.3.3
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
-        keep_latest: 15
+        keep_latest: 30
         delete_tags: true
