@@ -20,12 +20,17 @@ CONFIG_PACKAGE_nginx-ssl=y
 CONFIG_PACKAGE_nginx-ssl-util=y
 CONFIG_PACKAGE_nginx-util=y
 CONFIG_PACKAGE_nginx-mod-luci=y
-CONFIG_PACKAGE_luci-nginx=y" >> .config
+CONFIG_PACKAGE_luci-nginx=y
+CONFIG_PACKAGE_default-settings=y" >> .config
 
 
 # 追加binder内核参数
 echo "CONFIG_PSI=y
 CONFIG_KPROBES=y" >> target/linux/x86/64/config-6.6
+
+
+# 复制所有自定义插件包到package目录下
+cp -a $GITHUB_WORKSPACE/configfiles/packages/* package/
 
 
 # 集成CPU性能跑分脚本

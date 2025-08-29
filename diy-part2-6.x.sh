@@ -22,6 +22,10 @@ echo "CONFIG_PSI=y
 CONFIG_KPROBES=y" >> target/linux/rockchip/armv8/config-6.6
 
 
+# 复制所有自定义插件包到package目录下
+cp -a $GITHUB_WORKSPACE/configfiles/packages/* package/
+
+
 # 集成CPU性能跑分脚本
 cp -a $GITHUB_WORKSPACE/configfiles/coremark/* package/base-files/files/bin/
 chmod 755 package/base-files/files/bin/coremark
