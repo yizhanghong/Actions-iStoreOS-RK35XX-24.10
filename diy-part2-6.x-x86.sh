@@ -31,7 +31,7 @@ CONFIG_KPROBES=y" >> target/linux/x86/64/config-6.6
 
 # 集成CPU性能跑分脚本
 echo "CONFIG_PACKAGE_coremark=y" >> .config
-cp -f $GITHUB_WORKSPACE/configfiles/coremark/coremark.sh package/base-files/files/bin/coremark.sh
+cp -f $GITHUB_WORKSPACE/configfiles/coremark/coremark-x86.sh package/base-files/files/bin/coremark.sh
 chmod 755 package/base-files/files/bin/coremark.sh
 
 
