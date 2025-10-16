@@ -9,7 +9,7 @@ on:
         # required: false
         # default: 'false'
   schedule:
-   - cron: 0 16 * * *
+   - cron: 0 23 1/7 * *
 
 env:
   REPO_URL: https://github.com/istoreos/istoreos
@@ -22,7 +22,7 @@ env:
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-  GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   build:
